@@ -1,85 +1,113 @@
 [
     {
-        "shift": "<",
+        "rushift": "<",
+        "enshift": "±",
         "ru": ">",
+        "en": "§",
         "keyCode": "192",
         "width": "50px"
         },
         {
-        "shift": "!",
+        "rushift": "!",
         "ru": "1",
+        "enshift": "!",
+        "en": "1",
         "keyCode": "49",
         "width": "50px"
         },
         {
-        "shift": "",
+        "rushift": "\"",
         "ru": "2",
+        "enshift": "@",
+        "en": "2",
         "keyCode": "50",
         "width": "50px"
         },
         {
-        "shift": "№",
+        "rushift": "№",
         "ru": "3",
+        "enshift": "#",
+        "en": "3",
         "keyCode": "51",
         "width": "50px"
         },
         {
-        "shift": "%",
+        "rushift": "%",
         "ru": "4",
+        "enshift": "$",
+        "en": "4",
         "keyCode": "52",
         "width": "50px"
         },
         {
-        "shift": ":",
+        "rushift": ":",
         "ru": "5",
+        "enshift": "%",
+        "en": "5",
         "keyCode": "53",
         "width": "50px"
         },
         {
-        "shift": ",",
+        "rushift": ",",
         "ru": "6",
+        "enshift": "^",
+        "en": "6",
         "keyCode": "54",
         "width": "50px"
         },
         {
-        "shift": ".",
+        "rushift": ".",
         "ru": "7",
+        "enshift": "&",
+        "en": "7",
         "keyCode": "55",
         "width": "50px"
         },
         {
-        "shift": ";",
+        "rushift": ";",
         "ru": "8",
+        "enshift": "*",
+        "en": "8",
         "keyCode": "56",
         "width": "50px"
         },
         {
-        "shift": "(",
+        "rushift": "(",
         "ru": "9",
+        "enshift": "(",
+        "en": "9",
         "keyCode": "57",
         "width": "50px"
         },
         {
-        "shift": ")",
+        "rushift": ")",
         "ru": "0",
+        "enshift": ")",
+        "en": "0",
         "keyCode": "48",
         "width": "50px"
         },
         {
-        "shift": "_",
+        "rushift": "_",
         "ru": "-",
+        "enshift": "_",
+        "en": "-",
         "keyCode": "189",
         "width": "50px"
         },
         {
-        "shift": "+",
+        "rushift": "+",
         "ru": "=",
+        "enshift": "+",
+        "en": "=",
         "keyCode": "187",
         "width": "50px"
         },
         {
-        "shift": null,
+        "rushift": null,
         "ru": "backspace",
+        "enshift": null,
+        "en": "backspace",
         "keyCode": "8",
         "width": "100px"
         },
@@ -88,315 +116,417 @@
 
 
     {
-    "shift": null,
+    "rushift": null,
     "ru": "tab",
+    "enshift": null,
+    "en": "tab",
     "keyCode": "9",
     "width": "70px"
     },
     
     {
-    "shift": "Й",
+    "rushift": "Й",
     "ru": "й",
+    "enshift": "Q",
+    "en": "q",
     "keyCode": "81",
     "width": "50px"
     },
     {
-    "shift": "Ц",
+    "rushift": "Ц",
     "ru": "ц",
+    "enshift": "W",
+    "en": "w",
     "keyCode": "87",
     "width": "50px"
     },
     {
-    "shift": "У",
+    "rushift": "У",
     "ru": "у",
+    "enshift": "E",
+    "en": "e",
     "keyCode": "69",
     "width": "50px"
     },
     {
-    "shift": "К",
+    "rushift": "К",
     "ru": "к",
+    "enshift": "R",
+    "en": "r",
     "keyCode": "82",
     "width": "50px"
     },
     {
-    "shift": "Е",
+    "rushift": "Е",
     "ru": "е",
+    "enshift": "T",
+    "en": "t",
     "keyCode": "84",
     "width": "50px"
     },
     {
-    "shift": "Н",
+    "rushift": "Н",
     "ru": "н",
+    "enshift": "Y",
+    "en": "y",
     "keyCode": "89",
     "width": "50px"
     },
     {
-    "shift": "Г",
+    "rushift": "Г",
     "ru": "г",
+    "enshift": "U",
+    "en": "u",
     "keyCode": "85",
     "width": "50px"
     },
     {
-    "shift": "Ш",
+    "rushift": "Ш",
     "ru": "ш",
+    "enshift": "I",
+    "en": "i",
     "keyCode": "73",
     "width": "50px"
     },
     {
-    "shift": "Щ",
+    "rushift": "Щ",
     "ru": "щ",
+    "enshift": "O",
+    "en": "o",
     "keyCode": "79",
     "width": "50px"
     },
     {
-    "shift": "З",
+    "rushift": "З",
     "ru": "з",
+    "enshift": "P",
+    "en": "p",
     "keyCode": "80",
     "width": "50px"
     },
     {
-    "shift": "Х",
+    "rushift": "Х",
     "ru": "х",
+    "enshift": "{",
+    "en": "[",
     "keyCode": "219",
     "width": "50px"
     },
     {
-    "shift": "Ъ",
+    "rushift": "Ъ",
     "ru": "ъ",
+    "enshift": "}",
+    "en": "]",
     "keyCode": "221",
     "width": "50px"
     },
     {
-    "shift": null,
+    "rushift": null,
     "ru": "enter",
+    "enshift": null,
+    "en": "enter",
     "keyCode": "13",
     "width": "100px"
     },
     {
-        "shift": null,
+        "rushift": null,
         "ru": "capslock",
+        "enshift": null,
+        "en": "capslock",
         "keyCode": "20",
         "width": "120px"
         },
         {
-        "shift": "Ф",
+        "rushift": "Ф",
         "ru": "ф",
+        "enshift": "A",
+        "en": "a",
         "keyCode": "65",
         "width": "50px"
         },
         {
-        "shift": "Ы",
+        "rushift": "Ы",
         "ru": "ы",
+        "enshift": "S",
+        "en": "s",
         "keyCode": "83",
         "width": "50px"
         },
         {
-        "shift": "В",
+        "rushift": "В",
         "ru": "в",
+        "enshift": "D",
+        "en": "d",
         "keyCode": "68",
         "width": "50px"
         },
         {
-        "shift": "А",
+        "rushift": "А",
         "ru": "а",
+        "enshift": "F",
+        "en": "f",
         "keyCode": "70",
         "width": "50px"
         },
         {
-        "shift": "П",
+        "rushift": "П",
         "ru": "п",
+        "enshift": "G",
+        "en": "g",
         "keyCode": "71",
         "width": "50px"
         },
         {
-        "shift": "Р",
+        "rushift": "Р",
         "ru": "р",
+        "enshift": "H",
+        "en": "h",
         "keyCode": "72",
         "width": "50px"
         },
         {
-        "shift": "О",
+        "rushift": "О",
         "ru": "о",
+        "enshift": "J",
+        "en": "j",
         "keyCode": "74",
         "width": "50px"
         },
         {
-        "shift": "Л",
+        "rushift": "Л",
         "ru": "л",
+        "enshift": "K",
+        "en": "k",
         "keyCode": "75",
         "width": "50px"
         },
         {
-        "shift": "Д",
+        "rushift": "Д",
         "ru": "д",
+        "enshift": "L",
+        "en": "l",
         "keyCode": "76",
         "width": "50px"
         },
         {
-        "shift": "Ж",
+        "rushift": "Ж",
         "ru": "ж",
+        "enshift": ":",
+        "en": ";",
         "keyCode": "186",
         "width": "50px"
         },
         {
-        "shift": "Э",
+        "rushift": "Э",
         "ru": "э",
+        "enshift": "\"",
+        "en": "'",
         "keyCode": "222",
         "width": "50px"
         },
         {
-        "shift": "Ё",
+        "rushift": "Ё",
         "ru": "ё",
+        "enshift": "|",
+        "en": "\\",
         "keyCode": "220",
         "width": "50px"
         },
         {
-        "shift": null,
+        "rushift": null,
         "ru": "shift",
+        "enshift": null,
+        "en": "shift",
         "keyCode": "16",
         "width": "70px"
         },
         {
-        "shift": "[",
+        "rushift": "[",
         "ru": "]",
+        "enshift": "~",
+        "en": "`",
         "keyCode": "192",
         "width": "50px"
             },
             {
-            "shift": "Я",
+            "rushift": "Я",
             "ru": "я",
+            "enshift": "Z",
+            "en": "z",
             "keyCode": "90",
             "width": "50px"
             },
             {
-            "shift": "Ч",
+            "rushift": "Ч",
             "ru": "ч",
+            "enshift": "X",
+            "en": "x",
             "keyCode": "88",
             "width": "50px"
             },
             {
-            "shift": "С",
+            "rushift": "С",
             "ru": "с",
+            "enshift": "C",
+            "en": "c",
             "keyCode": "67",
             "width": "50px"
             },
             {
-            "shift": "М",
+            "rushift": "М",
             "ru": "м",
+            "enshift": "V",
+            "en": "v",
             "keyCode": "86",
             "width": "50px"
             },
             {
-            "shift": "И",
+            "rushift": "И",
             "ru": "и",
+            "enshift": "B",
+            "en": "b",
             "keyCode": "66",
             "width": "50px"
             },
             {
-            "shift": "Т",
+            "rushift": "Т",
             "ru": "т",
+            "enshift": "N",
+            "en": "n",
             "keyCode": "78",
             "width": "50px"
             },
             {
-            "shift": "Ь",
+            "rushift": "Ь",
             "ru": "ь",
+            "enshift": "M",
+            "en": "m",
             "keyCode": "77",
             "width": "50px"
             },
             {
-            "shift": "Б",
+            "rushift": "Б",
             "ru": "б",
+            "enshift": "<",
+            "en": ",",
             "keyCode": "188",
             "width": "50px"
             },
             {
-            "shift": "Ю",
+            "rushift": "Ю",
             "ru": "ю",
+            "enshift": ">",
+            "en": ".",
             "keyCode": "190",
             "width": "50px"
             },
             {
-            "shift": "?",
+            "rushift": "?",
             "ru": "/",
+            "enshift": "?",
+            "en": "/",
             "keyCode": "191",
             "width": "100px"
             },
             {
-            "shift": null,
+            "rushift": null,
             "ru": "shift",
+            "enshift": null,
+            "en": "shift",
             "keyCode": "16",
             "width": "120px"
             },
             {
-                "shift": null,
+                "rushift": null,
                 "ru": "fn",
+                "enshift": null,
+                "en": "fn",
                 "keyCode": "192",
                 "width": "50px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "ctrl",
+                    "enshift": null,
+                    "en": "ctrl",
                     "keyCode": "90",
                     "width": "50px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "option",
+                    "enshift": null,
+                    "en": "option",
                     "keyCode": "88",
                     "width": "80px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "command",
+                    "enshift": null,
+                    "en": "command",
                     "keyCode": "67",
                     "width": "90px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "SPACE",
+                    "enshift": null,
+                    "en": "SPACE",
                     "keyCode": "86",
                     "width": "200px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "command",
+                    "enshift": null,
+                    "en": "command",
                     "keyCode": "66",
                     "width": "90px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "option",
+                    "enshift": null,
+                    "en": "option",
                     "keyCode": "78",
                     "width": "80px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "&#x25b2;",
+                    "enshift": null,
+                    "en": "&#x25b2;",
                     "keyCode": "77",
                     "width": "50px",
                     "height": "20px",
                     "font": "10px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "&#x25c0;",
+                    "enshift": null,
+                    "en": "&#x25c0;",
                     "keyCode": "188",
                     "width": "50px",
                     "height": "20px",
                     "font": "10px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "&#x25bc;",
+                    "enshift": null,
+                    "en": "&#x25bc;",
                     "keyCode": "190",
                     "width": "50px",
                     "height": "20px",
                     "font": "10px"
                     },
                     {
-                    "shift": null,
+                    "rushift": null,
                     "ru": "&#x25ba;",
+                    "enshift": null,
+                    "en": "&#x25ba;",
                     "keyCode": "191",
                     "width": "50px",
                     "height": "20px",

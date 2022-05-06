@@ -1,5 +1,6 @@
 import ruKeys from './ru.json' assert { type: "json" };
 
+let langFlag = 'ru';
 const body = document.querySelector('body');
 function createKeyboard() {
   const area = document.createElement('input');
@@ -17,10 +18,18 @@ function createKeyboard() {
     const button = document.createElement('button');
     button.classList.add('button');
     button.style.width = ruKeys[i].width;
-    button.innerText = ruKeys[i].ru;
+    button.dataset.dataId = ruKeys[i].keyCode;
     const shiftSymbol = document.createElement('span');
+    if (langFlag == 'ru'){
+        button.innerText = ruKeys[i].ru;
+        shiftSymbol.innerHTML = ruKeys[i].rushift;
+    }
+   else{
+    button.innerText = ruKeys[i].en;
+    shiftSymbol.innerHTML = ruKeys[i].enshift;
+   }
     shiftSymbol.classList.add('shift-symbol');
-    shiftSymbol.innerHTML = ruKeys[i].shift;
+   
     button.append(shiftSymbol)
     firstLine.append(button);
   }
@@ -31,7 +40,12 @@ function createKeyboard() {
     const button = document.createElement('button');
     button.classList.add('button');
     button.style.width = ruKeys[i].width;
-    button.innerText = ruKeys[i].ru;
+    if (langFlag == 'ru'){
+        button.innerText = ruKeys[i].ru;
+    }
+  else{
+    button.innerText = ruKeys[i].en;
+  }
     secondLine.append(button);
   }
   keyboard.append(secondLine);
@@ -41,7 +55,12 @@ function createKeyboard() {
     const button = document.createElement('button');
     button.classList.add('button');
     button.style.width = ruKeys[i].width;
-    button.innerText = ruKeys[i].ru;
+    if (langFlag == 'ru'){
+        button.innerText = ruKeys[i].ru;
+    }
+  else{
+    button.innerText = ruKeys[i].en;
+  }
     thirdLine.append(button);
   }
   keyboard.append(thirdLine);
@@ -51,7 +70,12 @@ function createKeyboard() {
     const button = document.createElement('button');
     button.classList.add('button');
     button.style.width = ruKeys[i].width;
-    button.innerText = ruKeys[i].ru;
+    if (langFlag == 'ru'){
+        button.innerText = ruKeys[i].ru;
+    }
+  else{
+    button.innerText = ruKeys[i].en;
+  }
     fourLine.append(button);
   }
   keyboard.append(fourLine);
@@ -62,7 +86,12 @@ function createKeyboard() {
     const button = document.createElement('button');
     button.classList.add('button');
     button.style.width = ruKeys[i].width;
-    button.innerText = ruKeys[i].ru;
+    if (langFlag == 'ru'){
+        button.innerText = ruKeys[i].ru;
+    }
+  else{
+    button.innerText = ruKeys[i].en;
+  }
     fiveLine.append(button);
   }
   const arrows = document.createElement('div');
@@ -90,15 +119,29 @@ fiveLine.append(arrows)
   keyboard.append(fiveLine);
   const span = document.createElement('span');
   span.classList.add('descript');
-  span.innerHTML = 'MacOS system';
+  span.innerHTML = `MacOS system
+  1. Cмена клавиатуры на маке меняется посредством короткого нажатия на capslock, долгое нажатие включает capslock, 
+  соответственно, если вы проверяете на винде, то при нажатии shift alt должен подсветиться капслок и переключится на другой язык`;
   body.append(keyboard);
   body.append(span);
 }
 
 createKeyboard();
-
 document.addEventListener("keydown", function(event) {
-    console.log(event.keyCode);
+    console.log(typeof event.keyCode);
+    console.log(this)
+    if (event.keyCode == 20){
+        if (langFlag == 'ru'){
+            langFlag = 'en'
+        }
+       else{
+           langFlag = 'ru'
+       }
+        body.innerHTML = ''
+        createKeyboard();
+
+    }
   })
 
-  
+
+
