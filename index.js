@@ -2,11 +2,11 @@ import ruKeys from './ru.json' assert { type: "json" };
 
 let langFlag = 'ru';
 const body = document.querySelector('body');
-function createKeyboard() {
-  const area = document.createElement('input');
-  area.type = 'textarea';
+function createKeyboard(langFlag) {
+  const area = document.createElement('textarea');
   area.style.rows = '100';
-  area.style.overflow = 'hidden';
+  area.style.overflow = 'auto';
+  area.autofocus = 'autofocus'
   area.classList.add('textarea');
   body.append(area);
 
@@ -117,16 +117,27 @@ for (let i = 62; i < 65; i++){
 arrows.append(lastLine)
 fiveLine.append(arrows)
   keyboard.append(fiveLine);
+  const container = document.createElement('div')
+  container.classList.add('container')
   const span = document.createElement('span');
   span.classList.add('descript');
-  span.innerHTML = `MacOS system
-  1. Cмена клавиатуры на маке меняется посредством короткого нажатия на capslock, долгое нажатие включает capslock, 
-  соответственно, если вы проверяете на винде, то при нажатии shift alt должен подсветиться капслок и переключится на другой язык`;
+  span.innerHTML = `<pre>   MacOS system
+  1. Генерация клавиатуры выполнена полностью посредством js, 
+  body пустой и содержить в себе только script тег. +20б
+
+  2. Cмена клавиатуры на маке меняется посредством короткого нажатия на capslock, долгое нажатие включает capslock, 
+  соответственно, если вы проверяете на винде, то при нажатии shift alt должен подсветиться капслок и переключится на другой язык
+  при перезагрузке страницы выбранный язык сохраняется и клавиатура соотвествует раскладке +15б
+
+  3.
+
+  </pre>`;
+  container.append(span)
   body.append(keyboard);
-  body.append(span);
+  body.append(container);
 }
 
-createKeyboard();
+createKeyboard(langFlag);
 document.addEventListener("keydown", function(event) {
     console.log(typeof event.keyCode);
     console.log(this)
@@ -138,10 +149,43 @@ document.addEventListener("keydown", function(event) {
            langFlag = 'ru'
        }
         body.innerHTML = ''
-        createKeyboard();
+        createKeyboard(langFlag);
 
     }
   })
 
 
+  function setLocalStorage(){
+
+            localStorage.setItem(`keyboard-language`, langFlag)
+        
+         
+     
+ }
+ 
+ window.addEventListener('beforeunload', setLocalStorage)
+ 
+ 
+ function getLocalStorage(){
+    
+             if (localStorage.getItem(`keyboard-language`)){
+                body.innerHTML = ''
+                langFlag = localStorage.getItem(`keyboard-language`)
+                createKeyboard(langFlag);
+         }
+     
+     }
+     window.addEventListener('load', getLocalStorage)
+
+
+document.addEventListener('click', function(event){
+console.log(event.target)
+const area = document.querySelector('textarea')
+const buttons = document.querySelectorAll('button')
+buttons.forEach(button => {
+    if (button == event.target){
+    area.textContent += event.target.textContent
+    }
+})
+})
 

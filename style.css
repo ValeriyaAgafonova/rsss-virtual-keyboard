@@ -33,10 +33,10 @@ body{
 }
 .descript{
     width: 80%;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 20px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+  
 }
 .button{
     position: relative;
@@ -79,4 +79,11 @@ button:active{
     left: 2px;
     top: 2px;
     font-size: 14px;
+}
+.container{
+    margin-top: 20px;
+    width: 80%;
+    height: 150px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.8);
 }
